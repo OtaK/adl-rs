@@ -6,7 +6,7 @@ macro_rules! adlfn {
         $(#[$meta])*
         pub unsafe fn $fn(&self, $($arg: $arg_type), *) -> $ret {
             static ADDR_CACHE: std::sync::atomic::AtomicUsize = std::sync::atomic::AtomicUsize::new(0);
-
+            
         }
     };
 }
